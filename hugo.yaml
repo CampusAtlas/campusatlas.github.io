@@ -44,7 +44,7 @@ params:
     subtitle: We provide modern indoor mapping solutions.
     buttonText: See what we offer
     buttonLink: '#section1'
-    image: Map.jpg
+    image: Abstract_Blueprint.png
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     # clientlogos:
