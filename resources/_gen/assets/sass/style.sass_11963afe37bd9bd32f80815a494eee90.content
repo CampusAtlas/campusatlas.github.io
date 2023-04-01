@@ -7793,15 +7793,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 Main SCSS file / Fresh
 ========================================================================== */
 /* ==========================================================================
-Color variables
-========================================================================== */
-/* ==========================================================================
 Navbar
 ========================================================================== */
 .navbar.is-fresh {
   position: relative;
   min-height: 3.8rem;
   transition: all .3s;
+  background-color: #177463;
   z-index: 99; }
   .navbar.is-fresh .container {
     min-height: 4rem; }
@@ -7820,9 +7818,9 @@ Navbar
   .navbar.is-fresh .navbar-end {
     align-items: center; }
   .navbar.is-fresh .navbar-item {
-    color: #999; }
+    color: #fff; }
     .navbar.is-fresh .navbar-item.is-secondary:hover {
-      color: #F39200 !important; }
+      color: #DE481B !important; }
     .navbar.is-fresh .navbar-item.has-dropdown {
       padding: 10px 0; }
       .navbar.is-fresh .navbar-item.has-dropdown .navbar-link {
@@ -7837,13 +7835,13 @@ Navbar
         top: 3.4rem;
         min-width: 220px;
         margin-top: 4px;
-        border-top-color: #F39200; }
+        border-top-color: #DE481B; }
         .navbar.is-fresh .navbar-item.has-dropdown .navbar-dropdown .navbar-item {
           padding: 10px 20px; }
       .navbar.is-fresh .navbar-item.has-dropdown:hover .navbar-link {
-        color: #F39200; }
+        color: #DE481B; }
         .navbar.is-fresh .navbar-item.has-dropdown:hover .navbar-link:after {
-          border-color: #F39200; }
+          border-color: #DE481B; }
     .navbar.is-fresh .navbar-item .signup {
       display: block;
       line-height: 0;
@@ -7854,19 +7852,19 @@ Navbar
     left: 0;
     width: 100%;
     min-height: 4rem !important;
-    background: #fff;
+    background: #177463;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12); }
     .navbar.is-fresh.is-fixed a {
       color: #444F60; }
       .navbar.is-fresh.is-fixed a:hover {
-        color: #4FC1EA; }
+        color: #177463; }
 
 #navbar-clone {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #177463;
   transform: translateY(-100%);
   z-index: 100;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12); }
@@ -7884,7 +7882,7 @@ div.nav-item.is-drop:hover .dropContain .dropOut {
 
 div.nav-item.is-drop:hover, div.nav-item.is-drop:hover a {
   border-bottom: 1px solid transparent !important;
-  color: #F39200; }
+  color: #DE481B; }
 
 div.nav-item.is-drop:hover .dropContain {
   top: 65px;
@@ -7964,7 +7962,7 @@ Section Styles
   background-color: #fbfbfb; }
 
 .section.section-secondary {
-  background-color: #F39200; }
+  background-color: #DE481B; }
 
 .section.section-half {
   height: 75vh !important; }
@@ -7986,7 +7984,7 @@ Section Styles
 .divider {
   height: 3px;
   border-radius: 50px;
-  background: #F39200;
+  background: #DE481B;
   width: 60px; }
   .divider.is-centered {
     margin: 0 auto; }
@@ -8031,9 +8029,11 @@ Fresh Footer
 ========================================================================== */
 footer.footer-dark {
   background: #444F60;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 2em;
+  padding-top: 2em; }
   footer.footer-dark .columns {
-    margin-top: 35px; }
+    margin-top: 0px; }
   footer.footer-dark .footer-logo img {
     height: 40px; }
   footer.footer-dark .footer-column .footer-header h3 {
@@ -8052,7 +8052,7 @@ footer.footer-dark {
     footer.footer-dark .footer-column ul.link-list :hover {
       color: #fcfcfc; }
   footer.footer-dark .footer-column .level-item .icon {
-    color: #F39200;
+    color: #DE481B;
     transition: all 0.5s; }
     footer.footer-dark .footer-column .level-item .icon :hover {
       color: #fcfcfc; }
@@ -8086,8 +8086,8 @@ Classes to change the feel of bulma buttons
 
 .button.primary-btn {
   outline: none;
-  border-color: #4FC1EA;
-  background-color: #4FC1EA;
+  border-color: #177463;
+  background-color: #177463;
   color: #fff;
   transition: all 0.5s; }
   .button.primary-btn:hover {
@@ -8096,17 +8096,17 @@ Classes to change the feel of bulma buttons
     box-shadow: 0 14px 26px -12px rgba(79, 193, 234, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(79, 193, 234, 0.2) !important;
     opacity: 0.8; }
   .button.primary-btn.btn-outlined {
-    border-color: #4FC1EA;
-    color: #4FC1EA;
+    border-color: #177463;
+    color: #177463;
     background-color: transparent; }
     .button.primary-btn.btn-outlined:hover {
       color: #fff;
-      background-color: #4FC1EA; }
+      background-color: #177463; }
 
 .button.secondary-btn {
   outline: none;
-  border-color: #F39200;
-  background-color: #F39200;
+  border-color: #DE481B;
+  background-color: #DE481B;
   color: #fff;
   transition: all 0.5s; }
   .button.secondary-btn:hover {
@@ -8115,12 +8115,12 @@ Classes to change the feel of bulma buttons
     box-shadow: 0 14px 26px -12px rgba(243, 146, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(243, 146, 0, 0.2) !important;
     opacity: 0.8; }
   .button.secondary-btn.btn-outlined {
-    border-color: #F39200;
-    color: #F39200;
+    border-color: #DE481B;
+    color: #DE481B;
     background-color: transparent; }
     .button.secondary-btn.btn-outlined:hover {
       color: #fff;
-      background-color: #F39200; }
+      background-color: #DE481B; }
 
 .button.button.accent-btn {
   outline: none;
@@ -8188,9 +8188,9 @@ Cards and Card content styles
     .flex-card .navtab-content p {
       padding: 0 0.8rem 20px; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.primary {
-    background-color: #4FC1EA; }
+    background-color: #177463; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.secondary {
-    background-color: #F39200; }
+    background-color: #DE481B; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.accent {
     background-color: #00efb7; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header ul li a {
@@ -8220,13 +8220,13 @@ input.input {
   input.input.rounded {
     border-radius: 100px; }
   input.input.is-primary-focus:focus {
-    border-color: #4FC1EA; }
+    border-color: #177463; }
     input.input.is-primary-focus:focus ~ span.icon i {
-      color: #4FC1EA; }
+      color: #177463; }
   input.input.is-secondary-focus:focus {
-    border-color: #F39200; }
+    border-color: #DE481B; }
     input.input.is-secondary-focus:focus ~ span.icon i {
-      color: #F39200; }
+      color: #DE481B; }
   input.input.is-accent-focus:focus {
     border-color: #00efb7; }
     input.input.is-accent-focus:focus ~ span.icon i {
@@ -8349,7 +8349,7 @@ Sidebar Styles
     transform: scale(0.07);
     transform-origin: 0 0; }
     .menu-icon-wrapper svg path {
-      stroke: #F39200;
+      stroke: #DE481B;
       stroke-width: 40px;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -8412,7 +8412,7 @@ Sidebar Styles
       transition: all .3s;
       cursor: pointer; }
       .sidebar .sidebar-header svg:hover {
-        stroke: #F39200;
+        stroke: #DE481B;
         transform: rotate(180deg); }
   .sidebar .inner {
     position: relative; }
@@ -8444,7 +8444,7 @@ Sidebar Styles
         border-bottom: 1px solid #303d52;
         font-size: .8rem; }
         .sidebar .inner .sidebar-menu li.have-children li a:hover {
-          color: #4FC1EA;
+          color: #177463;
           padding-left: 62px; }
       .sidebar .inner .sidebar-menu li.have-children span::after {
         position: absolute;
@@ -8458,7 +8458,7 @@ Sidebar Styles
     .sidebar .inner li.have-children, .sidebar .inner li {
       position: relative; }
     .sidebar .inner li.have-children.active > a, .sidebar .inner li.have-children.active > a span, .sidebar .inner li.have-children.active > a span:after {
-      color: #F39200; }
+      color: #DE481B; }
     .sidebar .inner li.active.have-children span::after {
       -moz-transform: rotate(90deg);
       -o-transform: rotate(90deg);
@@ -8644,7 +8644,7 @@ button:focus, button:active {
 #backtotop.visible a:hover {
   outline: none;
   opacity: 0.9;
-  background: #F39200; }
+  background: #DE481B; }
 
 #backtotop a {
   outline: none;
@@ -8738,5 +8738,59 @@ body #backtotop a {
 :-moz-placeholder {
   /* Firefox 18- */
   color: #cecece; }
+
+.profile-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.about-card {
+  /* Add shadows to create the "card" effect */
+  margin: 1em;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+  text-align: center; }
+  .about-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover; }
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 10px 16px; }
+
+.story {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  border-radius: .5em;
+  background-color: #177463;
+  color: #fff;
+  margin-bottom: 1em; }
+  .story h2 {
+    color: #fff; }
+
+.description {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  border-radius: 0em 0em .5em .5em;
+  background-color: #177463;
+  color: #fff;
+  margin-bottom: 1em; }
+  .description h2 {
+    color: #fff; }
+
+.demo {
+  width: 100%;
+  margin: 0 !important;
+  object-fit: cover; }
+
+.context-list {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
