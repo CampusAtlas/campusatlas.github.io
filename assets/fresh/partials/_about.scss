@@ -1,0 +1,62 @@
+.profile-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.about-card {
+    /* Add shadows to create the "card" effect */
+    margin: 1em;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    text-align: center;
+    img{
+        width:100%;
+        height:auto;
+        aspect-ratio: 1;
+        border-radius: 5px 5px 0 0;
+        object-fit: cover;
+    }
+  }
+  
+  /* Add some padding inside the card container */
+  .card-container {
+    padding: 10px 16px;
+  }
+
+  .story{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: .5em;
+    background-color: $primary;
+    color: $white;
+    margin-bottom: 1em;
+    h2{
+        color: $white;
+    }
+  }
+
+  .description{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: 0em 0em .5em .5em;
+    background-color: $primary;
+    color: $white;
+    margin-bottom: 1em;
+    h2{
+        color: $white;
+    }
+  }
+
+  .demo{
+    width: 100%;
+    margin: 0 !important;
+    object-fit: cover ;
+  }
+
+  .context-list{
+    display: flex;
+    flex-direction: column;
+  }
